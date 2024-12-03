@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Bookmarker">
+    <meta name="description" content=" Bookmark your favorite sites!">
+
+    <title>Bookmark</title>
+
+    <link rel="shortcut icon" href="/images/bookmark.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <h1 class="display-5">Bookmarker</h1>
+            <hr class="line-seprator" />
+            <h2 class="fs-4 text-center mb-4"><i class="fa-solid fa-bookmark fs-4"></i> Bookmark your favorite sites <i
+                    class="fa-solid fa-bookmark"></i></h2>
+            <form id="addSitesForm" >
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="mb-4">
+                            <label for="siteName" class="form-label fw-bold"><i
+                                    class="fa-solid fa-book-bookmark me-2"></i> Site Name</label>
+                            <span class="text-danger font-weight-extra-bold ">*</span>
+                            <input type="text" class="form-control" oninput="validateUserInput(this)" id="siteName" name="siteName"
+                                placeholder="Bookmark Name" />
+
+                                <span class="text-danger error-msg d-none">Please enter name min (3) character starting with Capital latter </span>
+                            </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="mb-4">
+                            <label for="siteUrl" class="form-label fw-bold"><i class="fa-solid fa-link me-2"></i>
+                                Site URL</label>
+                            <span class="text-danger font-weight-extra-bold ">*</span>
+                            <input type="url" class="form-control" oninput="validateUserInput(this)" id="siteUrl" name="siteUrl"
+                                placeholder="Website Url" />
+                            <span class="text-danger error-msg d-none">Please enter valid url ex( https://www.example.com OR 
+                                http://example.com OR
+                                www.example.com )</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+
+                    <button class="btn btn-submit px-5 text-center" type="submit" id="submitBtn">Submit</button>
+                </div>
+            </form>
+            <hr class="line-seprator" />
+            <table class="table">
+                <thead class="text-center"> 
+                    <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Website Name</th>
+                        <th scope="col">Visit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center sites-wrapper">
+                  
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('Pacifico-Regular.woff2') format('woff2'),
+        url('Pacifico-Regular.woff') format('woff'),
+        url('Pacifico-Regular.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('PTSans-CaptionBold.woff2') format('woff2'),
+        url('PTSans-CaptionBold.woff') format('woff'),
+        url('PTSans-CaptionBold.ttf') format('TrueType');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('PTSans-Caption.woff2') format('woff2'),
+        url('PTSans-Caption.woff') format('woff'),
+        url('PTSans-Caption.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Righteous';
+    src: url('Righteous-Regular.woff2') format('woff2'),
+        url('Righteous-Regular.woff') format('woff'),
+        url('Righteous-Regular.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
